@@ -15,7 +15,9 @@ var mailOptions = {
   from: process.env.NODEMAILER_EMAIL,
   to: 'natankrasney@gmail.com',
   subject: 'Sending Email using Node.js',
-  text: 'That was easy!'
+  html: "<div style='text-align:right'> \
+  <p>שלום</p><a href='https://lodigital.org/'>לודיגיטל</a><p>נתן</p> \
+  </div>" 
 };
 
 transporter.sendMail(mailOptions, function(error, info){
